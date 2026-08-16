@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Bevan_Final_v11</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>main</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -10552,7 +10552,7 @@ At the standard 0.5 threshold, the model collapses to predicting 'no' for every 
 <span class="n">THRESHOLDS</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.125</span><span class="p">]</span>  <span class="c1"># 0.5 = original default threshold, 0.125 = lowered threshold</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">evaluate_at_threshold</span><span class="p">(</span><span class="n">probs</span><span class="p">,</span> <span class="n">actual_binary</span><span class="p">,</span> <span class="n">threshold</span><span class="p">):</span>
-    <span class="n">preds_binary</span> <span class="o">=</span> <span class="p">(</span><span class="n">probs</span> <span class="o">&gt;=</span> <span class="n">threshold</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">preds_binary</span> <span class="o">=</span> <span class="p">(</span><span class="n">probs</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">'accuracy'</span><span class="p">:</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">actual_binary</span><span class="p">,</span> <span class="n">preds_binary</span><span class="p">),</span>
         <span class="s1">'precision'</span><span class="p">:</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">actual_binary</span><span class="p">,</span> <span class="n">preds_binary</span><span class="p">,</span> <span class="n">zero_division</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
@@ -10651,10 +10651,10 @@ At the standard 0.5 threshold, the model collapses to predicting 'no' for every 
 <tr>
 <th rowspan="2" valign="top">Hill Climb (data-driven)</th>
 <th>0.500</th>
-<td>0.307692</td>
-<td>0.272727</td>
-<td>0.75</td>
-<td>0.400000</td>
+<td>0.615385</td>
+<td>0.000000</td>
+<td>0.00</td>
+<td>0.000000</td>
 <td>0.388889</td>
 </tr>
 <tr>
@@ -10700,6 +10700,35 @@ At the standard 0.5 threshold, the model collapses to predicting 'no' for every 
 <li>When the stakes are high, there is a fair discussion to be had about the trade off between model sensitivity and false red flags.</li>
 <li>Overall, the danger assessment based model produced better results than the one based in news stories.</li>
 </ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d8a55950">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span><span class="s1">'Bevan_Final_v11.ipynb'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] Converting notebook Bevan_Final_v11.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 3 image(s).
+[NbConvertApp] Writing 570579 bytes to Bevan_Final_v11.html
+</pre>
+</div>
 </div>
 </div>
 </div>
