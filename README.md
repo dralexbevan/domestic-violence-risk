@@ -6,6 +6,8 @@ A Bayesian Network model and time-based adaptation of the Danger Assessment (DA)
 **Author:** Dr Alex Bevan
 **Notebook:** `main.ipynb`
 
+## DISCLAIMER: THIS IS NOT A RISK ASSESSMENT TOOL THAT SHOULD BE USED. It is for research purposes only and is part of a Masters Degree in Applied Data Science.
+
 ## Overview
 
 The Danger Assessment (Campbell, 1986; Campbell, Webster & Glass, 2009) is a weighted 19-item yes/no questionnaire — "Does he own a gun?", "Has he threatened suicide?" — that sums to a score mapped onto four risk categories. It was built on a logistic regression fit to an 11-city case-control study (310 femicide/attempted-femicide cases vs. 324 controls); 90% of homicides in that study scored in the top two categories.
