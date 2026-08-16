@@ -65,8 +65,7 @@ Both models are evaluated on a held-out test split (grouped by original case, so
 
 | File | Description |
 |---|---|
-| `main.ipynb` | Main analysis notebook (latest version) |
-| `lethality_cpd_full.csv` | Full materialized CPT for the `lethality` node (~269MB — all factor-state combinations × P(lethality=yes)) |
+| `main.ipynb` | Main analysis notebook (latest version) | and html version
 | `Bayes DF/final_df_manual_cohab.csv` | Primary dataset used for training/evaluating the data-driven model (154 rows, incl. synthetic counterfactuals) |
 
 ## Environment / Dependencies
